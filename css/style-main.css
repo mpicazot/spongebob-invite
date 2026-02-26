@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Krabby';
+  src: url('..\\fonts\\Krabby Patty.ttf') format('truetype'); /*URL to font*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh; 
+  margin: 0;  
+  overflow-y: hidden; 
+}
+
+#main-picture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('..\\img\\img-arena.jpg') center / cover no-repeat;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /*position: relative;
+  flex-direction: column;*/
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-wrapper {
+  position: relative;
+}
+
+.wrapper img {
+  align-self: center;
+  margin: 15px;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.img-info {
+  height: 100vh;
+  width: 100%;
+}
+
+.btn-ubi {
+  background-color: #744831;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 10pt;
+}
+
+.krabby-font {
+  font-family: 'Krabby';
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
