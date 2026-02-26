@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <link rel="stylesheet" href="css\style.css">  
+    <!--<link rel="stylesheet" href="css\style-thirtyYears.css">  -->
+    <!--<link rel="stylesheet" href="css\style-main.css">  -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Manuel Picazo</title>
+</head>
+<body>
+    <audio id="audio1" src="audio/mas-tarde.mp3"></audio>
+    <audio id="audio2" src="audio/bubble.mp3"></audio>
+    <audio id="audio3" src="audio/main.mp3"></audio>
+
+    <!-- Home section -->
+    <div id="home" class="page active">
+        <div id="main-picture" class="page active">
+            <a id="link">
+                <img id="img-window" src="img\Window-btn.png" alt="" class="img-center img-animated" />
+            </a>
+        </div>
+    </div>
+
+    <!-- Thirty Years section -->
+    <div id="thirtyYears" class="page">
+        <div id="main-picture-ty" class="page">
+            <img src="img\later.png" alt="" class="img-center-ty">
+            <img src="img\bubble1.png" alt="" class="bubbleBoy">
+            <img src="img\bubble2.png" alt="" class="bubbleStupid">
+        </div>
+    </div>
+
+    <div id="main" class="page">
+        <div id="main-picture-main" class="page"></div>
+        <div class="container">
+            <section id="sec-main">
+                <div class="wrapper ">
+                    <img style="max-width: 400px" src="img\img-title.png" alt="">
+                    <img style="max-width: 250px" src="img\30.png" alt="">
+                </div>
+            </section>
+            <section id="sec-info">
+                <div class="wrapper info-wrapper">
+                    <a target="_blank" href="https://maps.app.goo.gl/ZkunqDuFVSqkM6tFA" class="btn-ubi krabby-font">VER UBICACION</a>
+                    <img  src="img\img-info.png" style="max-width: 400px" alt="" class="img-info">
+                </div>
+            </section>
+            <section>
+                <div class="wrapper info-wrapper">
+                    <a target="_blank" href="https://wa.me/528711761952?text=Confirmo asistencia a tu fiesta" class="btn-wp krabby-font">CONFIRMAR ASISTENCIA</a>
+                    <img  src="img\regalos.png" style="max-width: 400px" alt="" class="img-info">
+                </div>
+            </section>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <img src="img\\flecha.png" style="width:30px;" alt="" />
+        </div>
+    </div>
+
+
+    <script src="js\animation.js"></script>
+    <script src="js\index.js"></script>
+</body>
+</html>
