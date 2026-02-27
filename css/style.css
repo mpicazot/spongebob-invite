@@ -29,6 +29,8 @@ html, body {
 .img-center {
   height: 100vh;
   width: 100vw;
+  max-width: 400px;
+  /*max-height: 670px;*/
   animation: pulse 1.8s linear infinite;
 }
 
