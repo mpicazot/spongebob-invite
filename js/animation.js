@@ -86,11 +86,11 @@ function showItem(pageId) {
     document.getElementById(pageId).classList.add('active');
 }
 
-document.getElementById("scrollIndicator").addEventListener("click", () => {
+/*document.getElementById("scrollIndicator").addEventListener("click", () => {
     const targetSection = document.getElementById("sec-info");
     targetSection.scrollIntoView({behavior: "smooth"});
     disableScrollIndicator();
-});
+});*/
 
 
 
@@ -107,12 +107,17 @@ function enableScrollIndicator(){
     indicator.style.opacity = "1";
 }
 
+
+const secMain = document.querySelectorAll("#sec-main");
 const secInfo = document.querySelectorAll("#sec-info");
+const secGifts = document.querySelectorAll("#sec-gifts");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-        if(entry.target.id = "sec-info") disableScrollIndicator();
+        enableScrollIndicator();
+        if(entry.target.id == "sec-gifts") 
+            disableScrollIndicator();
         console.log("Element in screen:", entry.target.id);
     }
   });
@@ -120,4 +125,6 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.5 // 50% visible
 });
 
+secMain.forEach(box => observer.observe(box));
 secInfo.forEach(box => observer.observe(box));
+secGifts.forEach(box => observer.observe(box));
