@@ -200,7 +200,7 @@ section {
 
 .scroll-indicator {
   position: fixed;
-  bottom: 5px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 28px;
@@ -208,6 +208,11 @@ section {
   animation: bounce 1.5s infinite;
   color: white;
   transition: opacity 0.3s ease;
+}
+
+.scroll-img {
+  width: 50px;
+  height: auto;
 }
 
 @keyframes bounce {
